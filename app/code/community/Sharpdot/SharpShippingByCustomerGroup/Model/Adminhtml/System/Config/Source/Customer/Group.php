@@ -35,7 +35,7 @@ class Sharpdot_SharpShippingByCustomerGroup_Model_Adminhtml_System_Config_Source
             $this->_options = Mage::getResourceModel('customer/group_collection')
                 //->setRealGroupsFilter()
                 ->loadData()->toOptionArray();
-            array_unshift($this->_options, array('value'=> '', 'label'=> Mage::helper('sharppaymentsbycustomergroup')->__('-- Please Select --')));
+            array_unshift($this->_options, array('value'=> '', 'label'=> Mage::helper('sharpshippingbycustomergroup')->__('-- Please Select --')));
         }
         return $this->_options;
     }
